@@ -7,9 +7,13 @@
 import ResponsiveHeading from "./ResponsiveHeading";
 import Portrait from "../assets/portrait.jpeg";
 
-function Hero() {
+interface HeroProps {
+  className?: string;
+}
+
+export default function Hero({ className }: HeroProps) {
   return (
-    <div className="p-5 max-h-screen max-w-[120vh] mx-auto">
+    <section className={`p-5 max-h-screen max-w-[120vh] mx-auto ${className}`}>
       <div className="flex flex-col items-start">
         <ResponsiveHeading width="75%">Felipe</ResponsiveHeading>
         <ResponsiveHeading width="100%">Figueiredo</ResponsiveHeading>
@@ -27,8 +31,6 @@ function Hero() {
           <ResponsiveHeading>Developer</ResponsiveHeading>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
-
-export default Hero;
