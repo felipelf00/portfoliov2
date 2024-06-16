@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "title": "TÊNIS SEM FRONTEIRAS",
+      "description": "Webpage for a volunteering project that provides free tennis classes for children of low income families.\n\n On this project I took the opportunity to start learning TypeScript and Tailwind CSS.",
+      "technologies": "React, TypeScript, Tailwind CSS, HTML",
+      "live_url": "https://tenissemfronteiras.netlify.app/",
+      "repo_url": "https://github.com/felipelf00/tenis-sem-fronteiras",
+      "image_url": "tenis.jpg"
+    },
+    {
+      "id": 1,
+      "title": "CADASTRO PET",
+      "description": "Simple backend CRUD project for pets and tutors.\n\nThe target for this project was to learn how to set up and implement a backend application and integrating it with a database.",
+      "technologies": "Node.js, Express.js, MongoDB (mongoose), Pug",
+      "live_url": "https://spectrum-chiseled-laborer.glitch.me/registry",
+      "repo_url": "https://github.com/felipelf00/pets",
+      "image_url": "pets.jpg"
+    }
+  ]
+}
