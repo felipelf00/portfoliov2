@@ -5,11 +5,11 @@ import Projects from "./components/Projects";
 
 function App() {
   return (
-    <>
+    <main className="max-w-6xl mx-auto">
       <Hero className="mb-32" />
       <Bio className="px-12 mb-32" />
       <Projects className="px-12" />
-    </>
+    </main>
   );
 }
 

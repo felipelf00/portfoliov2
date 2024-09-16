@@ -23,7 +23,7 @@ export default function Hero({ className }: HeroProps) {
           <img
             src={Portrait}
             alt="Portrait"
-            className="h-[75%] rounded-full mx-auto shadow-2xl"
+            className="h-[75%] rounded-full mx-auto shadow-md"
           />
         </div>
         <div className="flex flex-col items-end w-1/2 justify-center">

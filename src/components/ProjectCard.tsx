@@ -11,7 +11,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     <div className="flex gap-4">
       <div className="w-1/3 flex flex-col justify-between">
         <ResponsiveHeading>{project.title}</ResponsiveHeading>
-        <p className="text-xl">
+        <p className="text-xl text-neutral-600">
           {project.description.split("\n").map((line, index) => (
             <React.Fragment key={index}>
               {line}
@@ -23,7 +23,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <a href="#" className="bg-black text-white px-2 py-1">
             Live page
           </a>
-          <a href="#">Repo</a>
+          <a href="#" className="px-2 py-1">
+            Repo
+          </a>
         </div>
       </div>
       <div className="w-2/3">
