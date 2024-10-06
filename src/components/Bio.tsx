@@ -1,4 +1,5 @@
 import ResponsiveHeading from "./ResponsiveHeading";
+import ScrambledText from "./ScrambledText";
 
 interface BioProps {
   className?: string;
@@ -43,18 +44,18 @@ export default function Bio({ className }: BioProps) {
       <div className="w-1/3 flex justify-center items-center">
         <ul className="flex flex-col justify-around h-full">
           <li>
-            <a className="text-6xl font-bold" href="#">
-              GitHub
+            <a className="text-6xl font-bold btn-secondary px-4" href="#">
+              <ScrambledText text={"Github"} />
             </a>
           </li>
           <li>
-            <a className="text-6xl font-bold" href="#">
-              LinkedIn
+            <a className="text-6xl font-bold btn-secondary px-4" href="#">
+              <ScrambledText text={"LinkedIn"} />
             </a>
           </li>
           <li>
-            <a className="text-6xl font-bold" href="#">
-              Contact
+            <a className="text-6xl font-bold btn-secondary px-4" href="#">
+              <ScrambledText text={"Contact"} />
             </a>
           </li>
         </ul>

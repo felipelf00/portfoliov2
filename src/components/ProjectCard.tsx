@@ -1,6 +1,7 @@
 import { Project } from "../types/Project";
 import React from "react";
 import ResponsiveHeading from "./ResponsiveHeading";
+import ScrambledText from "./ScrambledText";
 
 interface ProjectCardProps {
   project: Project;
@@ -21,17 +22,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </p>
         <div className="flex justify-center gap-5 text-2xl mb-12">
           {project.live_url && (
-            <a
-              href={project.live_url}
-              className="bg-black text-white px-2 py-1"
-            >
+            <a href={project.live_url} className="btn-primary px-2 py-1">
               Live page
             </a>
           )}
           {project.repo_url && (
-          <a href="#" className="px-2 py-1">
-            Repo
-          </a>
+            <a href="#" className="btn-secondary px-2 py-1">
+              Repo
+            </a>
           )}
         </div>
       </div>

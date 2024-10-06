@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 body {
   font-family: "Kanit", sans-serif;
+  /* font-family: "Space Mono", monospace; */
 }
 
 .portrait-mask {
@@ -15,4 +17,20 @@ body {
     0% 70%,
     0% 30%
   );
+}
+
+.btn-primary {
+  @apply bg-black text-white transition-all duration-300 ease-in-out;
+}
+
+.btn-primary:hover {
+  @apply bg-white text-black;
+}
+
+.btn-secondary {
+  @apply bg-white text-black transition-all duration-300 ease-in-out;
+}
+
+.btn-secondary:hover {
+  @apply bg-black text-white;
 }
