@@ -9,7 +9,11 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="flex gap-8">
-      <div className="w-1/2 flex flex-col justify-between">
+      <div
+        className="w-1/2 flex flex-col justify-between"
+        data-aos="fade-right"
+        data-aos-offset="300"
+      >
         <ResponsiveHeading>{project.title}</ResponsiveHeading>
         <p className="text-xl text-neutral-600">
           {project.description.split("\n").map((line, index) => (
@@ -33,7 +37,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
       </div>
       <div className="w-1/2">
-        <img className="" src={project.image_url} alt="" />
+        <img
+          className="rounded-lg shadow-md"
+          src={project.image_url}
+          alt=""
+          data-aos="flip-left"
+          data-aos-offset="300"
+        />
       </div>
     </div>
   );

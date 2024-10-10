@@ -8,7 +8,7 @@ interface ProjectsProps {
 
 export default function Projects({ className }: ProjectsProps) {
   return (
-    <div className={`${className} flex flex-col gap-8`}>
+    <div className={`${className} flex flex-col gap-20 py-20`}>
       {projectData.projects
         .slice()
         .reverse()
