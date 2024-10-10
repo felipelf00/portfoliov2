@@ -1,7 +1,6 @@
 import { Project } from "../types/Project";
 import React from "react";
 import ResponsiveHeading from "./ResponsiveHeading";
-import ScrambledText from "./ScrambledText";
 
 interface ProjectCardProps {
   project: Project;
@@ -9,8 +8,8 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="flex gap-4">
-      <div className="w-1/3 flex flex-col justify-between">
+    <div className="flex gap-8">
+      <div className="w-1/2 flex flex-col justify-between">
         <ResponsiveHeading>{project.title}</ResponsiveHeading>
         <p className="text-xl text-neutral-600">
           {project.description.split("\n").map((line, index) => (
@@ -33,7 +32,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           )}
         </div>
       </div>
-      <div className="w-2/3">
+      <div className="w-1/2">
         <img className="" src={project.image_url} alt="" />
       </div>
     </div>

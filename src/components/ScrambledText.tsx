@@ -14,6 +14,7 @@ export default function ScrambledText({
 }: ScrambledTextProps) {
   const [displayedText, setDisplayedText] = useState(text);
   const [triggerEffect, setTriggerEffect] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
   const textRef = useRef<HTMLElement | null>(null); // Ref to observe visibility
   const [iterations, setIterations] = useState(0);
 
@@ -49,8 +50,9 @@ export default function ScrambledText({
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
+          if (entry.isIntersecting && !hasAnimated) {
             setTriggerEffect(true);
+            setHasAnimated(true);
             setIterations(0); // Reset iterations when entering viewport
           }
         });
@@ -67,7 +69,7 @@ export default function ScrambledText({
         observer.unobserve(textRef.current);
       }
     };
-  }, []);
+  }, [hasAnimated]);
 
   // Handle mouse over
   const handleMouseOver = () => {
