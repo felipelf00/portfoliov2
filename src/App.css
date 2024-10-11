@@ -1,9 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+:root {
+  --bg-color: #e8eaed;
+  --bg-color-support: #0f0f0f1a;
+  --text-color: #0f0f0f;
+  --text-color-support: #0f0f0fb6;
+}
+
 body {
   font-family: "Kanit", sans-serif;
   /* font-family: "Space Mono", monospace; */
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: all ease-in-out 300ms;
+}
+
+.dark {
+  --bg-color: #0f0f0f;
+  --bg-color-support: #e8eaed1a;
+  --text-color: #e8eaed;
+  --text-color-support: #e8eaedb6;
+}
+
+p,
+.text-support {
+  color: var(--text-color-support);
+}
+
+.text-primary {
+  color: var(--text-color);
 }
 
 .portrait-mask {
@@ -20,17 +46,51 @@ body {
 }
 
 .btn-primary {
-  @apply bg-black text-white transition-all duration-300 ease-in-out;
+  @apply font-bold transition-all duration-300 ease-in-out;
+  background: var(--text-color);
+  color: var(--bg-color);
 }
 
 .btn-primary:hover {
-  @apply bg-white text-black;
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
 .btn-secondary {
-  @apply bg-white text-black transition-all duration-300 ease-in-out;
+  @apply font-bold transition-all duration-300 ease-in-out;
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
 .btn-secondary:hover {
-  @apply bg-black text-white;
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+
+.btn-theme-switch {
+  @apply cursor-pointer w-12 h-12 p-0 rounded-full flex justify-center items-center bg-[var(--bg-color-support)];
+}
+
+.btn-theme-switch:hover {
+  svg {
+    fill: var(--text-color);
+  }
+}
+
+.dark-icon {
+  @apply block;
+  fill: var(--text-color-support);
+}
+
+.dark .dark-icon {
+  @apply hidden;
+}
+
+.light-icon {
+  @apply hidden;
+}
+
+.dark .light-icon {
+  @apply block;
+  fill: var(--text-color-support);
 }

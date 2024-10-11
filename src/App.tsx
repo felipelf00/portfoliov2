@@ -5,6 +5,7 @@ import Bio from "./components/Bio";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import { useEffect } from "react";
+import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
   useEffect(() => {
@@ -14,7 +15,10 @@ function App() {
   }, []);
 
   return (
-    <main className="max-w-6xl mx-auto">
+    <main className="max-w-6xl mx-auto relative">
+      <div className="absolute top-8 right-0 fit-content z-10">
+        <ThemeToggle />
+      </div>
       <Hero className="mb-32 h-screen" />
       <Bio className="px-12 mb-32" />
       <Projects className="px-12" />

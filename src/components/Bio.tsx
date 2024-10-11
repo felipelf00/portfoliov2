@@ -10,11 +10,11 @@ export default function Bio({ className }: BioProps) {
     <section className={`${className} flex gap-16`}>
       <div className="w-2/3 flex flex-col gap-8">
         <ResponsiveHeading>"Who?"</ResponsiveHeading>
-        <div className="text-xl text-neutral-600">
+        <div className="text-xl">
           <p>
             I am a Brazilian Web Developer currently working at{" "}
             <a
-              className="font-semibold text-black"
+              className="font-semibold text-primary"
               href="https://buzzvel.com/"
               target="_blank"
             >
@@ -29,7 +29,7 @@ export default function Bio({ className }: BioProps) {
             co-owner of a small artisan bakery until the first half of 2023. I
             have been learning Full Stack JavaScript at{" "}
             <a
-              className="font-semibold text-black"
+              className="font-semibold text-primary"
               href="https://www.theodinproject.com/"
               target="_blank"
             >
