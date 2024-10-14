@@ -1,6 +1,6 @@
 import { Project } from "../types/Project";
 import React from "react";
-import ResponsiveHeading from "./ResponsiveHeading";
+// import ResponsiveHeading from "./ResponsiveHeading";
 
 interface ProjectCardProps {
   project: Project;
@@ -14,7 +14,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         data-aos="fade-right"
         data-aos-offset="300"
       >
-        <ResponsiveHeading>{project.title}</ResponsiveHeading>
+        {/* <ResponsiveHeading>{project.title}</ResponsiveHeading> */}
+        <h3 className="uppercase font-bold text-5xl">{project.title}</h3>
         <p className="text-xl">
           {project.description.split("\n").map((line, index) => (
             <React.Fragment key={index}>

@@ -2,6 +2,60 @@
   "projects": [
     {
       "id": 0,
+      "title": "Panis Padaria Artesanal",
+      "description": "Webpage for an artisan bakery that I used to be the owner of.",
+      "technologies": "JavaScript, CSS, HTML, Webpack.",
+      "live_url": "https://felipelf00.github.io/todo/dist/",
+      "repo_url": "https://github.com/felipelf00/todo",
+      "image_url": "panis.jpg"
+    },
+    {
+      "id": 1,
+      "title": "To-do list",
+      "description": "Simple to-do list website. The main target on this project was to apply Object Oriented Programming (OOP) principles in a practical application. Uses local storage.",
+      "technologies": "JavaScript, CSS, HTML, Webpack.",
+      "live_url": "https://felipelf00.github.io/todo/dist/",
+      "repo_url": "https://github.com/felipelf00/todo",
+      "image_url": "todo.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Weather app",
+      "description": "Minimalist weather forecast app that uses Weather API. The intention behind this project was to learn how to use REST APIs and asyncronous code, but I actually use this site in real life.",
+      "technologies": "JavaScript, CSS, HTML, Webpack, Weather API.",
+      "live_url": "https://felipelf00.github.io/weather/dist/",
+      "repo_url": "https://github.com/felipelf00/weather",
+      "image_url": "weather.jpg"
+    },
+    {
+      "id": 3,
+      "title": "battleship",
+      "description": "The classic game Battleship to be played against the (somewhat intelligent) computer.\nThis project was developed as part of a lesson on Unit Testing and Test Driven Development.",
+      "technologies": "React, Giphy API, JavaScript, CSS, HTML",
+      "live_url": "https://felipelf00.github.io/battleship/dist/",
+      "repo_url": "https://github.com/felipelf00/battleship",
+      "image_url": "battleship.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Cat memory game",
+      "description": "A memory game played with cat gifs.\nWith this one the target was to learn how to structure a React project and to use the useState and useEffect hooks. The game fetches random cat gifs from Giphy's API.",
+      "technologies": "React, Giphy API, JavaScript, CSS, HTML",
+      "live_url": "https://cat-memory-game1.netlify.app/",
+      "repo_url": "https://github.com/felipelf00/memory-game",
+      "image_url": "cats.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Store webpage",
+      "description": "Webpage for a clothing store with shopping cart functionality.\nThe objective of this project was to understand how to use React to handle routing, data fetching, state managing with the Context API, and prop type validation.",
+      "technologies": "React, Fake Store API, JavaScript, CSS, HTML",
+      "live_url": "https://felipes-fake-store.netlify.app/",
+      "repo_url": "https://github.com/felipelf00/shopping-cart",
+      "image_url": "store.jpg"
+    },
+    {
+      "id": 6,
       "title": "TÊNIS SEM FRONTEIRAS",
       "description": "Webpage for a volunteering project that provides free tennis classes for children of low income families.\n\n On this project I took the opportunity to start learning TypeScript and Tailwind CSS.",
       "technologies": "React, TypeScript, Tailwind CSS, HTML",
@@ -10,7 +64,7 @@
       "image_url": "tenis.jpg"
     },
     {
-      "id": 1,
+      "id": 7,
       "title": "CADASTRO PET",
       "description": "Simple backend CRUD project for pets and tutors.\n\nThe target for this project was to learn how to set up and implement a backend application and integrating it with a database.",
       "technologies": "Node.js, Express.js, MongoDB (mongoose), Pug",
