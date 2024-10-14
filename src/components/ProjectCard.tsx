@@ -8,9 +8,9 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="flex gap-8">
+    <div className="flex flex-col-reverse md:flex-row gap-8">
       <div
-        className="w-1/2 flex flex-col justify-between gap-8"
+        className="md:w-1/2 flex flex-col justify-between gap-8"
         data-aos="fade-right"
         data-aos-offset="300"
       >
@@ -36,7 +36,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           )}
         </div>
       </div>
-      <div className="w-1/2">
+      <div className="md:w-1/2">
         <img
           className="rounded-lg shadow-md"
           src={project.image_url}

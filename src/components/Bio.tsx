@@ -7,8 +7,8 @@ interface BioProps {
 
 export default function Bio({ className }: BioProps) {
   return (
-    <section className={`${className} flex gap-16`}>
-      <div className="w-2/3 flex flex-col gap-8">
+    <section className={`${className} flex flex-col md:flex-row gap-12 md:gap-16`}>
+      <div className="w-full md:w-2/3 flex flex-col gap-8">
         <ResponsiveHeading>"Who?"</ResponsiveHeading>
         <div className="text-xl">
           <p>
@@ -40,9 +40,9 @@ export default function Bio({ className }: BioProps) {
           </p>
         </div>
       </div>
-      <div className="w-0 border-2 border-neutral-600 rounded"></div>
-      <div className="w-1/3 flex justify-center items-center">
-        <ul className="flex flex-col justify-around h-full">
+      <div className="w-full md:w-0 border-2 border-neutral-600 rounded"></div>
+      <div className="w-full md:w-1/3 flex justify-center items-center">
+        <ul className="flex flex-col justify-around h-full gap-8">
           <li>
             <a className="text-6xl font-bold btn-secondary px-4" href="#">
               <ScrambledText text={"Github"} />

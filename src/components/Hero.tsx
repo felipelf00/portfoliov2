@@ -1,5 +1,6 @@
 import ResponsiveHeading from "./ResponsiveHeading";
 import Portrait from "../assets/portrait.jpeg";
+// import Portrait from "../assets/portrait-transparent.png";
 
 interface HeroProps {
   className?: string;
@@ -7,21 +8,26 @@ interface HeroProps {
 
 export default function Hero({ className }: HeroProps) {
   return (
-    <section className={`p-5 max-h-screen max-w-[120vh] mx-auto ${className}`}>
-      <div className="flex flex-col items-start" data-aos="zoom-out-down">
+    <section
+      className={`p-5 min-h-screenYY max-h-screenYY max-w-[120vh]YY max-w-[1000px]YY mx-auto relative ${className}`}
+    >
+      <div
+        className="flex flex-col items-start mb-4 md:mb-0"
+        data-aos="zoom-out-down"
+      >
         <ResponsiveHeading width="75%">Felipe</ResponsiveHeading>
         <ResponsiveHeading width="100%">Figueiredo</ResponsiveHeading>
       </div>
-      <div className="flex justify-between items-stretch">
-        <div className="w-1/2 flex items-center" data-aos="flip-left">
+      <div className="flex flex-col md:flex-row justify-between items-stretch">
+        <div className="md:w-1/2 flex items-center" data-aos="flip-left">
           <img
             src={Portrait}
             alt="Portrait"
-            className="h-[75%] rounded-full mx-auto shadow-md"
+            className="max-md:max-h-72 md:h-[75%] rounded-full mx-auto shadow-mdYY "
           />
         </div>
         <div
-          className="flex flex-col items-end w-1/2 justify-center"
+          className="flex flex-col items-end md:w-1/2 justify-center"
           data-aos="zoom-out-up"
         >
           <ResponsiveHeading>Web</ResponsiveHeading>
