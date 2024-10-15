@@ -23,7 +23,7 @@ function App() {
       <Hero className="mb-16 md:mb-32" />
       <Bio className="px-4 md:px-12 mb-16 md:mb-32" />
       <Projects className="px-4 md:px-12 py-20 mb-16 md:mb-32" />
-      <ContactForm className="mb-16 md:mb-32"/>
+      <ContactForm className="px-4 md:px-12 mb-16 md:mb-32"/>
     </main>
   );
 }
