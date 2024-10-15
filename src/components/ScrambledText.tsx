@@ -28,7 +28,9 @@ export default function ScrambledText({
             .split("")
             .map((letter, index) => {
               if (index < iterations) {
-                return text[index];
+                letter = text[index]
+                return letter;
+                
               }
               return letters[Math.floor(Math.random() * 26)];
             })

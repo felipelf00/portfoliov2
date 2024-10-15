@@ -5,7 +5,11 @@
   --bg-color: #e8eaed;
   --bg-color-support: #0f0f0f1a;
   --text-color: #0f0f0f;
-  --text-color-support: #0f0f0fb6;
+  --text-color-support: #0f0f0f98;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -93,4 +97,13 @@ p,
 .dark .light-icon {
   @apply block;
   fill: var(--text-color-support);
+}
+
+.form-border {
+  border: 2px solid var(--text-color-support);
+}
+
+.form-border:focus {
+  outline: none;
+  border: 2px solid var(--text-color);
 }

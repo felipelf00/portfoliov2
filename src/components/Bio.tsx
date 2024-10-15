@@ -55,17 +55,26 @@ export default function Bio({ className }: BioProps) {
       <div className="w-full md:w-1/3 flex justify-center items-center">
         <ul className="flex flex-col justify-around h-full gap-8">
           <li>
-            <a className="text-6xl font-bold btn-secondary px-4" href="https://github.com/felipelf00/">
+            <a
+              className="text-6xl font-bold btn-secondary px-4"
+              href="https://github.com/felipelf00/"
+            >
               <ScrambledText text={"Github"} />
             </a>
           </li>
           <li>
-            <a className="text-6xl font-bold btn-secondary px-4" href="https://www.linkedin.com/in/felipelf00">
+            <a
+              className="text-6xl font-bold btn-secondary px-4"
+              href="https://www.linkedin.com/in/felipelf00"
+            >
               <ScrambledText text={"LinkedIn"} />
             </a>
           </li>
           <li>
-            <a className="text-6xl font-bold btn-secondary px-4" href="#">
+            <a
+              className="text-6xl font-bold btn-secondary px-4"
+              href="#contact"
+            >
               <ScrambledText text={"Contact"} />
             </a>
           </li>

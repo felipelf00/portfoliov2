@@ -9,7 +9,7 @@ interface HeroProps {
 export default function Hero({ className }: HeroProps) {
   return (
     <section
-      className={`p-5 min-h-screenYY max-h-screenYY max-w-[120vh]YY max-w-[1000px]YY mx-auto relative ${className}`}
+      className={`p-5 md:px-0 min-h-screenYY max-h-screenYY max-w-[120vh]YY max-w-[1000px]YY mx-auto relative ${className}`}
     >
       <div
         className="flex flex-col items-start mb-4 md:mb-0"

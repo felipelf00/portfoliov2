@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import { useEffect } from "react";
 import ThemeToggle from "./components/ThemeToggle";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   useEffect(() => {
@@ -21,7 +22,8 @@ function App() {
       </div>
       <Hero className="mb-16 md:mb-32" />
       <Bio className="px-4 md:px-12 mb-16 md:mb-32" />
-      <Projects className="px-4 md:px-12 py-20" />
+      <Projects className="px-4 md:px-12 py-20 mb-16 md:mb-32" />
+      <ContactForm className="mb-16 md:mb-32"/>
     </main>
   );
 }

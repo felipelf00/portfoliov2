@@ -9,7 +9,7 @@ interface ProjectsProps {
 export default function Projects({ className }: ProjectsProps) {
   return (
     <section className={`${className}`}>
-      <h2 className="uppercase text-7xl md:text-8xl font-bold mb-12">Personal projects</h2>
+      <h2 className="uppercase text-center text-7xl md:text-8xl font-bold mb-12">Personal projects</h2>
       <div className="flex flex-col gap-20">
         {projectData.projects
           .slice()
